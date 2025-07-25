@@ -1,135 +1,26 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+body {
+    font-family: Roboto, sans-serif;
 }
 
-section h3,
-section h2,
-form button {
-    font-family: "Exile", system-ui;
-    font-weight: normal;
+.navbar {
+    background-color: #e15f41;
 }
 
-header {
-    font-family: "Exile", system-ui;
-    background-color: rgb(104, 97, 84);
-    padding: 25px;
+.nav .nav-link.active{
+    background-color: #fff;
+    color: #e15f41;
 }
 
-header nav li{
-    display: inline;
-    margin-left: 16px;
-    font-size: 20px;
-}
-
-header nav li a{
-    text-decoration: none;
-    color: aliceblue;
-}
-
-.container {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-header .container,
-.mugiwaras {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-body, input, textarea {
-    font-family: "Bebas Neue", sans-serif;
-    background-color: rgb(161, 158, 149);
-}
-
-section .mugiwaras img {
-    height: 300px;
-}
-
-section .container h2 {
-    padding: 10px 0px;
-    color: rgb(48, 26, 1);
-}
-
-#sobre {
-    padding: 15px 0;
-    color: rgb(22, 7, 7);
-}
-
-section .mugiwaras {
-    flex-wrap: wrap;
-}
-
-.mugiwaras div {
-    width: 30%;
-    display: flex;
-    padding: 16px 0;
-}
-
-.social-links img {
-    height: 24px;
-}
-
-.social-links li {
-    display: inline;
-    margin-right: 8px;
-}
-
-.social-links li a {
-    text-decoration: none;
-}
-
-#contact .container {
-    display: block;
-}
-
-.contact_methods {
-    display: flex;
-    justify-content: space-between;
-}
-
-form input,
-textarea,
-button {
-    display: block;
-    width: 320px;
-    margin-bottom: 8px;
-    padding: 8px;
-}
-
-textarea {
-    resize: none;
-}
-
-form button {
-    background-color: rgb(145, 138, 50);
+.nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover {
     color: #fff;
-    border: none;
 }
 
-form button:hover {
-    cursor: pointer;
-    background-color: rgb(170, 170, 0);
+.navbar-brand {
+    font-family: Pacifico, sans-serif;
 }
 
-section h3 {
-    margin-bottom: 16px;
-}
-
-input:focus, textarea:focus {
-    outline-color: orange;
-}
-
-textarea {
-    height: 120px;
-}
-
-footer {
-    background-color: blue;
-    color: #fff;
-    padding: 16px 0;
+.navbar-toggler {
+    background-color: #fff;
 }
