@@ -3,57 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Piece</title>
+    <title>KachuLandia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./lib/bootstrap.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">   
+    <link rel="stylesheet" href="./main.css"> 
 </head>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top">
-        <div class="container p-2">
-            <h1 class="navbar-brand m-">
-                <i class="bi bi-stars"></i>Site nosso Friend
+    <header class="navbar navbar-expand-lg sticky-top" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand font-text">
+                <i class="bi bi-stars"></i>
+                    KachuLandia
+                <i class="bi bi-stars"></i>
             </h1>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao"><span class="navbar-toggler-icon"></span></button>
-            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="navbar-collapse collapse justify-content-end" id="#menu-navegacao">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item">
-                        <a class="nav-link active fw-bold" href="#">
-                            <i class="bi bi-emoji-sunglasses me-1"></i>Sobre o Kachu</a>
+                        <a href="#profile" class="nav-link active fw-bold">sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold" href="#kachu">
-                            <i class="bi bi-emoji-astonished me-1"></i>Memess</a>
+                        <a href="#sobreKachu" class="nav-link fw-bold">imagens</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold" href="#">
-                            <i class="bi bi-emoji-angry me-1"></i>Desejos</a>
+                        <a href="#jogos" class="nav-link fw-bold">Jogos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold" href="#">
-                            <i class="bi bi-emoji-angry me-1"></i>Contatos</a>
+                        <a href="#contato" class="nav-link fw-bold">Contato</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section id="personagens">
-            <div class="container">
-                <div class="row pt-5 pb-5">
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <div class="container">
+            <section id="profile">
+                <div class="row pt-5">
                     <div class="col-md-3">
                         <div class="carousel slide" data-bs-ride="carousel" id="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="./carousel-img/kachu01.png" alt="kachu1" class="w-100 d-block rounded">
+                                    <img src="./carousel-img/kachu01.png" alt="" class="w-100 d-block rounded">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./carousel-img/kachu02.jpg" alt="kachu2" class="w-100 d-block rounded">
+                                    <img src="./carousel-img/kachu02.jpg" alt="" class="w-100 d-block rounded">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./carousel-img/kachu03.jpg" alt="kachu3" class="w-100 d-block rounded">
+                                    <img src="./carousel-img/kachu03.jpg" alt="" class="w-100 d-block rounded">
                                 </div>
                                 <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
                                 <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
@@ -63,32 +67,117 @@
                                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9" id="sobre">
+                        <h2 class="font-text pb-2">Sobre o Ramon</h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem nesciunt a molestias magni, eligendi blanditiis dolorum quas ratione quisquam atque optio sunt necessitatibus iusto in sit! Suscipit ipsum qui doloremque!
+                        </p>
+                        <h3 class="font-text pb-2">
+                            Fatos sobre ele:
+                        </h3>
+                        <ul>
+                            <li>
+                                Compra 500 jogos na Steam por semana. Joga 2. Arrepende-se de todos.
+                            </li>
+                            <li>
+                                Não gosta do amigo Diogo. Motivo desconhecido. Cientistas ainda investigam.
+                            </li>
+                            <li>
+                                Só joga coisa ruim "jogos de luta". Garante que “são técnicos”, mas a gente só vê botão sendo esmagado.
+                            </li>
+                            <li>
+                                Taxa de headshot no CS: -70%. Isso mesmo, ele cura os inimigos.
+                            </li>
+                            <li>
+                                Adora trabalhar! Enquanto todo mundo quer sexta-feira, ele sonha com segunda.
+                            </li>
+
+                                Nunca na minha vida conheci alguém que amasse tanto trabalhar. Se trabalho fosse esporte olímpico, ele tinha ouro, prata e o crachá vitalício.
+
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-9">
-                    <h2>Kachu cabeça de pika</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem nesciunt a molestias magni, eligendi blanditiis dolorum quas ratione quisquam atque optio sunt necessitatibus iusto in sit! Suscipit ipsum qui doloremque!</p>
-                        <h3>sobre o mizerável</h3>
+            </section>
+    
+            <section id="sobreKachu">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="./carousel-img/PIKA.png" alt="" class="w-100">
+                    </div>
+                    <div class="col-md-7">
+                            <h3>Um pouco sobre essa imagem</h3>
+                            <p>
+                                Até o momento, sua origem é desconhecida. Mas muitos dizem que foi nesse momento… que Ramonlestado virou um verdadeiro espadachim.
+                            </p>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    
+            </section>
+    
+            <section id="jogos">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h1>Teste</h1>
+                            </div>
+                            <div class="card-body">
+                                <img src="https://placehold.co/150x200" alt="" class="w-100">
+                                <div class="card-text">
+                                    djashvdajd
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h1>Teste</h1>
+                            </div>
+                            <div class="card-body">
+                                <img src="https://placehold.co/150x200" alt="" class="w-100">
+                                <div class="card-text">
+                                    djashvdajd
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h1>Teste</h1>
+                            </div>
+                            <div class="card-body">
+                                <img src="https://placehold.co/150x200" alt="" class="w-100">
+                                <div class="card-text">
+                                    djashvdajd
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h1>Teste</h1>
+                            </div>
+                            <div class="card-body">
+                                <img src="https://placehold.co/150x200" alt="" class="w-100">
+                                <div class="card-text">
+                                    djashvdajd
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
+            </section>
+    
+            <section id="contato">
+    
+            </section>
         </div>
-    </section>
-    <section id="kachu">
-        <div class="container pt-5">
-            <div class="row">
-                <div class="col-md-5">
-                    <img src="./carousel-img/PIKA.png" alt="" class="w-100">
-                </div>
-                <div class="col-md-7">
-                    <h3>dasdasdasd</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+
     <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>

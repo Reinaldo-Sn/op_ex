@@ -1,14 +1,19 @@
 body {
     font-family: Roboto, sans-serif;
+    background-color: #CCC;
+}
+
+section {
+    height: 70vh;
 }
 
 .navbar {
-    background-color: #e15f41;
+    background-color: #000;
 }
 
 .nav .nav-link.active{
     background-color: #fff;
-    color: #e15f41;
+    color: #000;
 }
 
 .nav .nav-link,
@@ -17,10 +22,18 @@ body {
     color: #fff;
 }
 
-.navbar-brand {
+.font-text {
     font-family: Pacifico, sans-serif;
 }
 
 .navbar-toggler {
     background-color: #fff;
+}
+
+.font-text{
+    border-bottom: 2px #000 solid;
+} 
+
+#sobre ul li{
+    border-bottom: 20px;
 }
