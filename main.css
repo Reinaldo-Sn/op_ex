@@ -30,13 +30,15 @@ section {
     font-family: Pacifico, sans-serif;
 }
 
+.font-content {
+    font-family: Roboto, sans-serif;
+    font-size: medium;
+    text-shadow: rgba(0, 0, 0, 0.9) 1px 4px;
+}
+
 .navbar-toggler {
     background-color: #fff;
 }
-
-.font-text{
-    border-bottom: 2px #000 solid;
-} 
 
 #sobre ul li{
     border-bottom: 20px;
@@ -47,12 +49,30 @@ section {
     background-color: transparent;
     color: #fff;
     border: rgba(0, 0, 0, 0.1), solid 6px;
+    margin-bottom: 36px;
 }
 
 .card-game:hover {
     cursor: pointer;
     background-color: rgba(28, 51, 151, 0.1);
     transform: translateY(-10px);
+    text-shadow: rgba(2, 1, 68, 0.9) 1px 4px;
+}
+
+#sobreKachu {
+    padding-bottom: 20px;
+    border-bottom: rgba(0, 0, 0, 0.2) 4px solid;
+    border-top: rgba(0, 0, 0, 0.2) 4px solid;
+}
+
+#sobreKachu img {
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    border: 5px solid rgba(0, 0, 0, 0.3);
+}
+
+#sobreKachu img:hover {
+    transform: scale(1.01);
 }
 
 .card-body img {
@@ -60,5 +80,40 @@ section {
 }
 
 footer {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#steam {
+    text-align: center;
+    margin-bottom: 36px;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    text-shadow: rgba(24, 1, 231, 0.7) 1px 3px;
+}
+
+.carousel-item p {
+    font-size: 15px;
+    text-shadow: #000 3px 3px;
+}
+
+.carousel-indicators {
+    position: static;
+    margin-top: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.carousel button:hover .carousel-control-prev-icon,
+.carousel button:hover .carousel-control-next-icon {
+    opacity: 1;
+    padding: 15px;
+    border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.4);
 }
