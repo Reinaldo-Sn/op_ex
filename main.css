@@ -1,10 +1,14 @@
 body {
-    font-family: Roboto, sans-serif;
-    background-color: #CCC;
+    font-family: "Lobster", sans-serif;
+    background-image: url('img/steam-background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 section {
-    height: 70vh;
+    padding-top: 70px;
 }
 
 .navbar {
@@ -36,4 +40,25 @@ section {
 
 #sobre ul li{
     border-bottom: 20px;
+}
+
+.card-game {
+    transition: transform 0.3s ease;
+    background-color: transparent;
+    color: #fff;
+    border: rgba(0, 0, 0, 0.1), solid 6px;
+}
+
+.card-game:hover {
+    cursor: pointer;
+    background-color: rgba(28, 51, 151, 0.1);
+    transform: translateY(-10px);
+}
+
+.card-body img {
+    height: 350px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.4);
 }
